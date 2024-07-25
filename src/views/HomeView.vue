@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
 const links = ref([
   {
     name: "Novo quiz 📖",
-    link: "/quiz",
+    link: "/new-quiz",
     img_path: "",
   },
   {
@@ -39,7 +39,7 @@ const links = ref([
       <template v-for="item in links" :key="item.name">
         <RouterLink
           :to="item.link"
-          class="btn block py-7 px-8 rounded-xl w-[90%] md:w-[40%] m-auto overflow-hidden"
+          class="btn block py-7 px-8 rounded-xl w-[90%] md:w-[40%] m-auto overflow-hidden ease-in duration-200"
         >
           <span class="font-semibold text-xl text-white z-30 relative">
             {{ item.name }}
@@ -120,9 +120,8 @@ const links = ref([
       &::after {
         position: absolute;
         content: "";
-
         inset: -35%;
-        border: 1px solid #cde4df;
+        border: 2px solid #cde4df;
         border-radius: 50%;
       }
     }
@@ -142,6 +141,13 @@ const links = ref([
     .dot {
       width: 200px;
       height: 200px;
+      background: #dee7e5;
+
+      .dot-outsite {
+        &::after {
+          border: 2px solid #dee7e5;
+        }
+      }
     }
     .dot-1 {
       top: 10%;
