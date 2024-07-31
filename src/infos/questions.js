@@ -987,7 +987,7 @@ export const animals = {
 
     {
       question: 'Quantos ossos tem uma girafa no seu pescoço?',
-      options: {
+      answers: {
         a: '7',
         b: '14',
         c: '21',
@@ -998,7 +998,7 @@ export const animals = {
     },
     {
       question: 'Qual é o maior mamífero terrestre?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Rinoceronte branco',
         c: 'Hipopótamo',
@@ -1009,7 +1009,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do ornitorrinco?',
-      options: {
+      answers: {
         a: 'É um mamífero que põe ovos',
         b: 'É um marsupial',
         c: 'É um réptil',
@@ -1020,7 +1020,7 @@ export const animals = {
     },
     {
       question: 'Qual é a velocidade máxima de um guepardo?',
-      options: {
+      answers: {
         a: '80 km/h',
         b: '100 km/h',
         c: '120 km/h',
@@ -1031,7 +1031,7 @@ export const animals = {
     },
     {
       question: 'Qual destes animais possui o sistema de ecolocalização mais avançado?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Morcego',
         c: 'Cachalote',
@@ -1042,7 +1042,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome científico do leão?',
-      options: {
+      answers: {
         a: 'Panthera leo',
         b: 'Panthera onca',
         c: 'Panthera tigris',
@@ -1053,7 +1053,7 @@ export const animals = {
     },
     {
       question: 'Quantos anos em média vive um papagaio-cinzento?',
-      options: {
+      answers: {
         a: '20-30 anos',
         b: '30-40 anos',
         c: '40-50 anos',
@@ -1064,7 +1064,7 @@ export const animals = {
     },
     {
       question: 'Qual é o maior inseto do mundo?',
-      options: {
+      answers: {
         a: 'Besouro-rinoceronte',
         b: 'Grilo-gigante',
         c: 'Bicho-pau',
@@ -1075,7 +1075,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal diferença entre crocodilos e jacarés?',
-      options: {
+      answers: {
         a: 'Os crocodilos têm focinho mais fino',
         b: 'Os jacarés têm dentes visíveis quando a boca está fechada',
         c: 'Os crocodilos vivem apenas na África',
@@ -1086,7 +1086,7 @@ export const animals = {
     },
     {
       question: 'Qual é o menor mamífero do mundo?',
-      options: {
+      answers: {
         a: 'Musaranho-pigmeu',
         b: 'Morcego-abelha',
         c: 'Musaranho-etíope',
@@ -1097,7 +1097,7 @@ export const animals = {
     },
     {
       question: 'Qual é a maior espécie de lobo?',
-      options: {
+      answers: {
         a: 'Lobo-cinzento',
         b: 'Lobo-vermelho',
         c: 'Lobo-do-ártico',
@@ -1108,7 +1108,7 @@ export const animals = {
     },
     {
       question: 'Qual é a dieta principal de um lince ibérico?',
-      options: {
+      answers: {
         a: 'Coelhos',
         b: 'Veados',
         c: 'Pássaros',
@@ -1119,7 +1119,7 @@ export const animals = {
     },
     {
       question: 'Qual é o único mamífero que não pode saltar?',
-      options: {
+      answers: {
         a: 'Elefante',
         b: 'Rinoceronte',
         c: 'Hipopótamo',
@@ -1130,7 +1130,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior pinguim do mundo?',
-      options: {
+      answers: {
         a: 'Pinguim-imperador',
         b: 'Pinguim-rei',
         c: 'Pinguim-de-Adélia',
@@ -1141,7 +1141,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do dragão de Komodo?',
-      options: {
+      answers: {
         a: 'É o maior lagarto do mundo',
         b: 'Pode mudar de cor',
         c: 'É venenoso',
@@ -1152,7 +1152,7 @@ export const animals = {
     },
     {
       question: 'Quantas espécies de pinguins existem atualmente?',
-      options: {
+      answers: {
         a: '10',
         b: '18',
         c: '24',
@@ -1163,7 +1163,7 @@ export const animals = {
     },
     {
       question: 'Qual é a única espécie de urso que não hiberna?',
-      options: {
+      answers: {
         a: 'Urso-polar',
         b: 'Urso-pardo',
         c: 'Urso-negro',
@@ -1174,7 +1174,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal fonte de alimento dos flamingos?',
-      options: {
+      answers: {
         a: 'Plâncton',
         b: 'Peixes',
         c: 'Camarões',
@@ -1185,7 +1185,7 @@ export const animals = {
     },
     {
       question: 'Qual é a expectativa de vida de uma tartaruga-de-Galápagos?',
-      options: {
+      answers: {
         a: '50-60 anos',
         b: '60-70 anos',
         c: '70-80 anos',
@@ -1196,7 +1196,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do processo pelo qual as lagostas trocam de carapaça?',
-      options: {
+      answers: {
         a: 'Mudança',
         b: 'Crescimento',
         c: 'Metamorfose',
@@ -1207,7 +1207,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do tubarão-martelo?',
-      options: {
+      answers: {
         a: 'Possui uma cabeça em forma de martelo',
         b: 'É o maior tubarão',
         c: 'É o mais rápido nadador',
@@ -1218,7 +1218,7 @@ export const animals = {
     },
     {
       question: 'Qual é o animal nacional da Índia?',
-      options: {
+      answers: {
         a: 'Elefante',
         b: 'Leão asiático',
         c: 'Tigre de Bengala',
@@ -1229,7 +1229,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do lobo-guará?',
-      options: {
+      answers: {
         a: 'Pernas longas e finas',
         b: 'Pele grossa e escura',
         c: 'Dentes muito afiados',
@@ -1240,7 +1240,7 @@ export const animals = {
     },
     {
       question: 'Qual é a velocidade máxima de um falcão-peregrino em voo de mergulho?',
-      options: {
+      answers: {
         a: '150 km/h',
         b: '200 km/h',
         c: '250 km/h',
@@ -1251,7 +1251,7 @@ export const animals = {
     },
     {
       question: 'Qual destes animais é conhecido por ser monogâmico?',
-      options: {
+      answers: {
         a: 'Pinguim',
         b: 'Cisne',
         c: 'Águia',
@@ -1262,7 +1262,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do peixe-palhaço?',
-      options: {
+      answers: {
         a: 'Vive em anêmonas',
         b: 'Pode mudar de sexo',
         c: 'É bioluminescente',
@@ -1273,7 +1273,7 @@ export const animals = {
     },
     {
       question: 'Quantos corações tem um polvo?',
-      options: {
+      answers: {
         a: '1',
         b: '2',
         c: '3',
@@ -1284,7 +1284,7 @@ export const animals = {
     },
     {
       question: 'Qual é a única ave que pode voar para trás?',
-      options: {
+      answers: {
         a: 'Pássaro-lira',
         b: 'Beija-flor',
         c: 'Pardal',
@@ -1295,7 +1295,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do camelo-bactriano?',
-      options: {
+      answers: {
         a: 'Possui duas corcovas',
         b: 'Pode correr muito rápido',
         c: 'É nativo da África',
@@ -1306,7 +1306,7 @@ export const animals = {
     },
     {
       question: 'Qual é o único mamífero capaz de voar?',
-      options: {
+      answers: {
         a: 'Morcego',
         b: 'Esquilo-voador',
         c: 'Gambá-planador',
@@ -1317,7 +1317,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'É o maior peixe do mundo',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -1328,7 +1328,7 @@ export const animals = {
     },
     {
       question: 'Qual é a expectativa de vida de uma tartaruga marinha?',
-      options: {
+      answers: {
         a: '30-50 anos',
         b: '50-70 anos',
         c: '70-90 anos',
@@ -1339,7 +1339,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do tamanduá-bandeira?',
-      options: {
+      answers: {
         a: 'Tem uma língua longa para capturar insetos',
         b: 'Pode mudar de cor',
         c: 'Pode voar',
@@ -1350,7 +1350,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome científico do elefante africano?',
-      options: {
+      answers: {
         a: 'Loxodonta africana',
         b: 'Elephas maximus',
         c: 'Panthera leo',
@@ -1361,7 +1361,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do urso panda?',
-      options: {
+      answers: {
         a: 'Dieta baseada em bambu',
         b: 'Vive em árvores',
         c: 'É carnívoro',
@@ -1372,7 +1372,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior pássaro do mundo?',
-      options: {
+      answers: {
         a: 'Avestruz',
         b: 'Ema',
         c: 'Condor',
@@ -1383,7 +1383,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior réptil do mundo?',
-      options: {
+      answers: {
         a: 'Crocodilo-de-água-salgada',
         b: 'Anaconda',
         c: 'Dragão de Komodo',
@@ -1394,7 +1394,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do ornitorrinco macho?',
-      options: {
+      answers: {
         a: 'Possui esporões venenosos',
         b: 'Pode voar',
         c: 'É bioluminescente',
@@ -1405,7 +1405,7 @@ export const animals = {
     },
     {
       question: 'Qual é a expectativa de vida de um elefante africano?',
-      options: {
+      answers: {
         a: '30-40 anos',
         b: '40-50 anos',
         c: '50-60 anos',
@@ -1416,7 +1416,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do rinoceronte-negro?',
-      options: {
+      answers: {
         a: 'Tem dois chifres',
         b: 'Pode voar',
         c: 'É herbívoro',
@@ -1427,7 +1427,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome científico do lobo-guará?',
-      options: {
+      answers: {
         a: 'Chrysocyon brachyurus',
         b: 'Canis lupus',
         c: 'Canis latrans',
@@ -1438,7 +1438,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior animal conhecido?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Elefante africano',
         c: 'Tubarão-baleia',
@@ -1450,7 +1450,7 @@ export const animals = {
 
     {
       question: 'Qual é o único mamífero que pode viver em águas salgadas?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Delfim',
         c: 'Foca',
@@ -1462,7 +1462,7 @@ export const animals = {
     {
       question:
         'Qual é o nome do fenômeno pelo qual alguns animais podem regenerar membros inteiros?',
-      options: {
+      answers: {
         a: 'Regeneração',
         b: 'Metamorfose',
         c: 'Muda',
@@ -1473,7 +1473,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do axolote?',
-      options: {
+      answers: {
         a: 'Capacidade de regenerar membros',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -1484,7 +1484,7 @@ export const animals = {
     },
     {
       question: 'Qual destes animais tem o maior cérebro em relação ao tamanho do corpo?',
-      options: {
+      answers: {
         a: 'Delfim',
         b: 'Elefante',
         c: 'Orca',
@@ -1495,7 +1495,7 @@ export const animals = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de navegar usando a Terra magnética?',
-      options: {
+      answers: {
         a: 'Pombo',
         b: 'Tartaruga marinha',
         c: 'Robalo',
@@ -1506,7 +1506,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica mais distinta dos moluscos cefalópodes?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Voo',
         c: 'Regeneração de membros',
@@ -1517,7 +1517,7 @@ export const animals = {
     },
     {
       question: 'Qual é o maior réptil marinho conhecido?',
-      options: {
+      answers: {
         a: 'Crocodilo-de-água-salgada',
         b: 'Iguana marinha',
         c: 'Dragão de Komodo',
@@ -1529,7 +1529,7 @@ export const animals = {
     {
       question:
         'Qual é o animal conhecido por sua capacidade de criar um campo elétrico para navegação e caça?',
-      options: {
+      answers: {
         a: 'Raia',
         b: 'Tubarão',
         c: 'Enguia elétrica',
@@ -1540,7 +1540,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do peixe-lua?',
-      options: {
+      answers: {
         a: 'É o peixe mais pesado do mundo',
         b: 'Pode voar',
         c: 'É venenoso',
@@ -1552,7 +1552,7 @@ export const animals = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de criar sons de alta frequência para localizar presas?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Morcego',
         c: 'Cachalote',
@@ -1563,7 +1563,7 @@ export const animals = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de hibernar por longos períodos?',
-      options: {
+      answers: {
         a: 'Pico',
         b: 'Urso',
         c: 'Esquilo',
@@ -1575,7 +1575,7 @@ export const animals = {
     {
       question:
         'Qual é a principal característica do axolote, que o torna diferente de outros anfíbios?',
-      options: {
+      answers: {
         a: 'Sua capacidade de manter características larvais durante a vida adulta',
         b: 'Sua habilidade de voar',
         c: 'Sua pele altamente venenosa',
@@ -1586,7 +1586,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do fenômeno onde alguns animais podem mudar o sexo durante a vida?',
-      options: {
+      answers: {
         a: 'Sequencial',
         b: 'Simultâneo',
         c: 'Regeneração',
@@ -1597,7 +1597,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica dos animais bioluminescentes?',
-      options: {
+      answers: {
         a: 'Capacidade de produzir luz própria',
         b: 'Capacidade de mudar de cor',
         c: 'Habilidade de voar',
@@ -1608,7 +1608,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior cefalópode conhecido?',
-      options: {
+      answers: {
         a: 'Lula-gigante',
         b: 'Polvo',
         c: 'Lula-colossal',
@@ -1620,7 +1620,7 @@ export const animals = {
     {
       question:
         'Qual é a principal característica do dragão de Komodo que o torna um predador eficiente?',
-      options: {
+      answers: {
         a: 'Sua saliva venenosa',
         b: 'Sua habilidade de voar',
         c: 'Sua visão aguçada',
@@ -1632,7 +1632,7 @@ export const animals = {
     {
       question:
         'Qual é a principal característica do peixe-lua, conhecido por seu tamanho impressionante?',
-      options: {
+      answers: {
         a: 'Seu peso pode exceder 2.500 kg',
         b: 'Pode mudar de cor',
         c: 'É altamente venenoso',
@@ -1644,7 +1644,7 @@ export const animals = {
     {
       question:
         'Qual é a principal característica do tubarão-baleia que o distingue dos outros tubarões?',
-      options: {
+      answers: {
         a: 'Seu tamanho gigantesco',
         b: 'Sua habilidade de mudar de cor',
         c: 'Sua bioluminescência',
@@ -1656,7 +1656,7 @@ export const animals = {
     {
       question:
         'Qual é a principal característica do peixe-lua que o torna um dos maiores peixes do mundo?',
-      options: {
+      answers: {
         a: 'Sua enorme massa corporal',
         b: 'Sua capacidade de mudar de cor',
         c: 'Sua habilidade de voar',
@@ -1668,7 +1668,7 @@ export const animals = {
     {
       question:
         'Qual é o animal que pode mudar de cor e textura para se camuflar no ambiente marinho?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Tartaruga',
         c: 'Peixe-lua',
@@ -1679,7 +1679,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do peixe-lua que o distingue de outros peixes?',
-      options: {
+      answers: {
         a: 'Sua enorme circunferência',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -1691,7 +1691,7 @@ export const animals = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de realizar um voo de alta velocidade?',
-      options: {
+      answers: {
         a: 'Falcão-peregrino',
         b: 'Águia',
         c: 'Beija-flor',
@@ -1702,7 +1702,7 @@ export const animals = {
     },
     {
       question: 'Qual é o principal alimento do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'Plâncton',
         b: 'Peixes grandes',
         c: 'Caranguejos',
@@ -1713,7 +1713,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica única dos moluscos cefalópodes, como a lula e o polvo?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Habilidade de voar',
         c: 'Habilidade de regenerar membros',
@@ -1725,7 +1725,7 @@ export const animals = {
     {
       question:
         'Qual é a característica mais distintiva do polvo em comparação com outros cefalópodes?',
-      options: {
+      answers: {
         a: 'Sua capacidade de mudar de cor e textura',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -1736,7 +1736,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica do cavalo-marinho que o distingue de outros peixes?',
-      options: {
+      answers: {
         a: 'O macho carrega os ovos',
         b: 'Tem uma cauda preênsil',
         c: 'Pode voar',
@@ -1748,7 +1748,7 @@ export const animals = {
     {
       question:
         'Qual é o animal que tem a capacidade de realizar uma metamorfose completa durante sua vida?',
-      options: {
+      answers: {
         a: 'Borboleta',
         b: 'Sapo',
         c: 'Lagarto',
@@ -1760,7 +1760,7 @@ export const animals = {
     {
       question:
         'Qual é o nome da técnica usada por alguns animais para se camuflar em ambientes marinhos?',
-      options: {
+      answers: {
         a: 'Camuflagem',
         b: 'Metamorfose',
         c: 'Disfarce',
@@ -1771,7 +1771,7 @@ export const animals = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'dragão barbudo'?",
-      options: {
+      answers: {
         a: 'Possui uma pele escamosa com uma barbicha',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -1782,7 +1782,7 @@ export const animals = {
     },
     {
       question: 'Qual é o maior animal terrestre conhecido?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Girafa',
         c: 'Rinoceronte',
@@ -1793,7 +1793,7 @@ export const animals = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de voar a velocidades supersônicas?',
-      options: {
+      answers: {
         a: 'Falcão-peregrino',
         b: 'Águia',
         c: 'Pato',
@@ -1804,7 +1804,7 @@ export const animals = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'ornitorrinco'?",
-      options: {
+      answers: {
         a: 'Possui esporões venenosos',
         b: 'Pode voar',
         c: 'É bioluminescente',
@@ -1816,7 +1816,7 @@ export const animals = {
     {
       question:
         'Qual é o animal que pode mudar de cor e textura para se esconder de predadores e presas?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Robalo',
         c: 'Tartaruga',
@@ -1827,7 +1827,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica mais distintiva do peixe-lua?',
-      options: {
+      answers: {
         a: 'Seu tamanho gigante',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -1838,7 +1838,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior animal marinho conhecido?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Tubarão-baleia',
         c: 'Orca',
@@ -1849,7 +1849,7 @@ export const animals = {
     },
     {
       question: 'Qual é a principal característica do camaleão?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor',
         b: 'Possui asas',
         c: 'É venenoso',
@@ -1860,7 +1860,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior predador marinho?',
-      options: {
+      answers: {
         a: 'Orca',
         b: 'Tubarão-branco',
         c: 'Cachalote',
@@ -1872,7 +1872,7 @@ export const animals = {
     {
       question:
         'Qual é o nome do animal que possui um sistema de comunicação altamente complexo e vocalizações distintas?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Elefante',
         c: 'Macaco',
@@ -1883,7 +1883,7 @@ export const animals = {
     },
     {
       question: 'Qual é o principal habitat do peixe-lua?',
-      options: {
+      answers: {
         a: 'Oceano profundo',
         b: 'Águas rasas',
         c: 'Rios',
@@ -1894,7 +1894,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica mais distintiva do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'Seu tamanho enorme',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -1905,7 +1905,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior animal terrestre?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Girafa',
         c: 'Rinoceronte',
@@ -1916,7 +1916,7 @@ export const animals = {
     },
     {
       question: "Qual é a principal característica dos animais conhecidos como 'cefalópodes'?",
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Habilidade de voar',
         c: 'Capacidade de criar teias',
@@ -1927,7 +1927,7 @@ export const animals = {
     },
     {
       question: 'Qual é o nome do maior réptil marinho?',
-      options: {
+      answers: {
         a: 'Tartaruga-de-couro',
         b: 'Crocodilo-de-água-salgada',
         c: 'Dragão de Komodo',
@@ -1939,7 +1939,7 @@ export const animals = {
     {
       question:
         'Qual é a característica mais distintiva do delfim em comparação com outros cetáceos?',
-      options: {
+      answers: {
         a: 'Sua inteligência e habilidades sociais',
         b: 'Sua capacidade de voar',
         c: 'Sua habilidade de mudar de cor',
@@ -1951,7 +1951,7 @@ export const animals = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de criar padrões complexos na pele como forma de comunicação?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Tartaruga',
         c: 'Peixe-lua',
@@ -1962,7 +1962,7 @@ export const animals = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'dragão barbudo'?",
-      options: {
+      answers: {
         a: 'Sua pele escamosa com uma barbicha',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -1974,7 +1974,7 @@ export const animals = {
     {
       question:
         'Qual é o animal que pode realizar uma metamorfose completa e mudar de forma completamente durante sua vida?',
-      options: {
+      answers: {
         a: 'Borboleta',
         b: 'Sapo',
         c: 'Lagarto',
@@ -1985,7 +1985,7 @@ export const animals = {
     },
     {
       question: 'Qual é a característica mais distintiva do cavalo-marinho?',
-      options: {
+      answers: {
         a: 'O macho carrega os ovos',
         b: 'Possui asas',
         c: 'É venenoso',
@@ -1997,7 +1997,7 @@ export const animals = {
     {
       question:
         'Qual é o nome do animal que possui uma estrutura corporal adaptada para a vida aquática e é conhecido por sua habilidade de voar?',
-      options: {
+      answers: {
         a: 'Morcego',
         b: 'Pinguim',
         c: 'Pato',
@@ -2998,7 +2998,7 @@ export const tech = {
 
     {
       question: 'Quantos ossos tem uma girafa no seu pescoço?',
-      options: {
+      answers: {
         a: '7',
         b: '14',
         c: '21',
@@ -3009,7 +3009,7 @@ export const tech = {
     },
     {
       question: 'Qual é o maior mamífero terrestre?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Rinoceronte branco',
         c: 'Hipopótamo',
@@ -3020,7 +3020,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do ornitorrinco?',
-      options: {
+      answers: {
         a: 'É um mamífero que põe ovos',
         b: 'É um marsupial',
         c: 'É um réptil',
@@ -3031,7 +3031,7 @@ export const tech = {
     },
     {
       question: 'Qual é a velocidade máxima de um guepardo?',
-      options: {
+      answers: {
         a: '80 km/h',
         b: '100 km/h',
         c: '120 km/h',
@@ -3042,7 +3042,7 @@ export const tech = {
     },
     {
       question: 'Qual destes animais possui o sistema de ecolocalização mais avançado?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Morcego',
         c: 'Cachalote',
@@ -3053,7 +3053,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome científico do leão?',
-      options: {
+      answers: {
         a: 'Panthera leo',
         b: 'Panthera onca',
         c: 'Panthera tigris',
@@ -3064,7 +3064,7 @@ export const tech = {
     },
     {
       question: 'Quantos anos em média vive um papagaio-cinzento?',
-      options: {
+      answers: {
         a: '20-30 anos',
         b: '30-40 anos',
         c: '40-50 anos',
@@ -3075,7 +3075,7 @@ export const tech = {
     },
     {
       question: 'Qual é o maior inseto do mundo?',
-      options: {
+      answers: {
         a: 'Besouro-rinoceronte',
         b: 'Grilo-gigante',
         c: 'Bicho-pau',
@@ -3086,7 +3086,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal diferença entre crocodilos e jacarés?',
-      options: {
+      answers: {
         a: 'Os crocodilos têm focinho mais fino',
         b: 'Os jacarés têm dentes visíveis quando a boca está fechada',
         c: 'Os crocodilos vivem apenas na África',
@@ -3097,7 +3097,7 @@ export const tech = {
     },
     {
       question: 'Qual é o menor mamífero do mundo?',
-      options: {
+      answers: {
         a: 'Musaranho-pigmeu',
         b: 'Morcego-abelha',
         c: 'Musaranho-etíope',
@@ -3108,7 +3108,7 @@ export const tech = {
     },
     {
       question: 'Qual é a maior espécie de lobo?',
-      options: {
+      answers: {
         a: 'Lobo-cinzento',
         b: 'Lobo-vermelho',
         c: 'Lobo-do-ártico',
@@ -3119,7 +3119,7 @@ export const tech = {
     },
     {
       question: 'Qual é a dieta principal de um lince ibérico?',
-      options: {
+      answers: {
         a: 'Coelhos',
         b: 'Veados',
         c: 'Pássaros',
@@ -3130,7 +3130,7 @@ export const tech = {
     },
     {
       question: 'Qual é o único mamífero que não pode saltar?',
-      options: {
+      answers: {
         a: 'Elefante',
         b: 'Rinoceronte',
         c: 'Hipopótamo',
@@ -3141,7 +3141,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior pinguim do mundo?',
-      options: {
+      answers: {
         a: 'Pinguim-imperador',
         b: 'Pinguim-rei',
         c: 'Pinguim-de-Adélia',
@@ -3152,7 +3152,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do dragão de Komodo?',
-      options: {
+      answers: {
         a: 'É o maior lagarto do mundo',
         b: 'Pode mudar de cor',
         c: 'É venenoso',
@@ -3163,7 +3163,7 @@ export const tech = {
     },
     {
       question: 'Quantas espécies de pinguins existem atualmente?',
-      options: {
+      answers: {
         a: '10',
         b: '18',
         c: '24',
@@ -3174,7 +3174,7 @@ export const tech = {
     },
     {
       question: 'Qual é a única espécie de urso que não hiberna?',
-      options: {
+      answers: {
         a: 'Urso-polar',
         b: 'Urso-pardo',
         c: 'Urso-negro',
@@ -3185,7 +3185,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal fonte de alimento dos flamingos?',
-      options: {
+      answers: {
         a: 'Plâncton',
         b: 'Peixes',
         c: 'Camarões',
@@ -3196,7 +3196,7 @@ export const tech = {
     },
     {
       question: 'Qual é a expectativa de vida de uma tartaruga-de-Galápagos?',
-      options: {
+      answers: {
         a: '50-60 anos',
         b: '60-70 anos',
         c: '70-80 anos',
@@ -3207,7 +3207,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do processo pelo qual as lagostas trocam de carapaça?',
-      options: {
+      answers: {
         a: 'Mudança',
         b: 'Crescimento',
         c: 'Metamorfose',
@@ -3218,7 +3218,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do tubarão-martelo?',
-      options: {
+      answers: {
         a: 'Possui uma cabeça em forma de martelo',
         b: 'É o maior tubarão',
         c: 'É o mais rápido nadador',
@@ -3229,7 +3229,7 @@ export const tech = {
     },
     {
       question: 'Qual é o animal nacional da Índia?',
-      options: {
+      answers: {
         a: 'Elefante',
         b: 'Leão asiático',
         c: 'Tigre de Bengala',
@@ -3240,7 +3240,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do lobo-guará?',
-      options: {
+      answers: {
         a: 'Pernas longas e finas',
         b: 'Pele grossa e escura',
         c: 'Dentes muito afiados',
@@ -3251,7 +3251,7 @@ export const tech = {
     },
     {
       question: 'Qual é a velocidade máxima de um falcão-peregrino em voo de mergulho?',
-      options: {
+      answers: {
         a: '150 km/h',
         b: '200 km/h',
         c: '250 km/h',
@@ -3262,7 +3262,7 @@ export const tech = {
     },
     {
       question: 'Qual destes animais é conhecido por ser monogâmico?',
-      options: {
+      answers: {
         a: 'Pinguim',
         b: 'Cisne',
         c: 'Águia',
@@ -3273,7 +3273,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do peixe-palhaço?',
-      options: {
+      answers: {
         a: 'Vive em anêmonas',
         b: 'Pode mudar de sexo',
         c: 'É bioluminescente',
@@ -3284,7 +3284,7 @@ export const tech = {
     },
     {
       question: 'Quantos corações tem um polvo?',
-      options: {
+      answers: {
         a: '1',
         b: '2',
         c: '3',
@@ -3295,7 +3295,7 @@ export const tech = {
     },
     {
       question: 'Qual é a única ave que pode voar para trás?',
-      options: {
+      answers: {
         a: 'Pássaro-lira',
         b: 'Beija-flor',
         c: 'Pardal',
@@ -3306,7 +3306,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do camelo-bactriano?',
-      options: {
+      answers: {
         a: 'Possui duas corcovas',
         b: 'Pode correr muito rápido',
         c: 'É nativo da África',
@@ -3317,7 +3317,7 @@ export const tech = {
     },
     {
       question: 'Qual é o único mamífero capaz de voar?',
-      options: {
+      answers: {
         a: 'Morcego',
         b: 'Esquilo-voador',
         c: 'Gambá-planador',
@@ -3328,7 +3328,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'É o maior peixe do mundo',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -3339,7 +3339,7 @@ export const tech = {
     },
     {
       question: 'Qual é a expectativa de vida de uma tartaruga marinha?',
-      options: {
+      answers: {
         a: '30-50 anos',
         b: '50-70 anos',
         c: '70-90 anos',
@@ -3350,7 +3350,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do tamanduá-bandeira?',
-      options: {
+      answers: {
         a: 'Tem uma língua longa para capturar insetos',
         b: 'Pode mudar de cor',
         c: 'Pode voar',
@@ -3361,7 +3361,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome científico do elefante africano?',
-      options: {
+      answers: {
         a: 'Loxodonta africana',
         b: 'Elephas maximus',
         c: 'Panthera leo',
@@ -3372,7 +3372,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do urso panda?',
-      options: {
+      answers: {
         a: 'Dieta baseada em bambu',
         b: 'Vive em árvores',
         c: 'É carnívoro',
@@ -3383,7 +3383,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior pássaro do mundo?',
-      options: {
+      answers: {
         a: 'Avestruz',
         b: 'Ema',
         c: 'Condor',
@@ -3394,7 +3394,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior réptil do mundo?',
-      options: {
+      answers: {
         a: 'Crocodilo-de-água-salgada',
         b: 'Anaconda',
         c: 'Dragão de Komodo',
@@ -3405,7 +3405,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do ornitorrinco macho?',
-      options: {
+      answers: {
         a: 'Possui esporões venenosos',
         b: 'Pode voar',
         c: 'É bioluminescente',
@@ -3416,7 +3416,7 @@ export const tech = {
     },
     {
       question: 'Qual é a expectativa de vida de um elefante africano?',
-      options: {
+      answers: {
         a: '30-40 anos',
         b: '40-50 anos',
         c: '50-60 anos',
@@ -3427,7 +3427,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do rinoceronte-negro?',
-      options: {
+      answers: {
         a: 'Tem dois chifres',
         b: 'Pode voar',
         c: 'É herbívoro',
@@ -3438,7 +3438,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome científico do lobo-guará?',
-      options: {
+      answers: {
         a: 'Chrysocyon brachyurus',
         b: 'Canis lupus',
         c: 'Canis latrans',
@@ -3449,7 +3449,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior animal conhecido?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Elefante africano',
         c: 'Tubarão-baleia',
@@ -3461,7 +3461,7 @@ export const tech = {
 
     {
       question: 'Qual é o único mamífero que pode viver em águas salgadas?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Delfim',
         c: 'Foca',
@@ -3473,7 +3473,7 @@ export const tech = {
     {
       question:
         'Qual é o nome do fenômeno pelo qual alguns animais podem regenerar membros inteiros?',
-      options: {
+      answers: {
         a: 'Regeneração',
         b: 'Metamorfose',
         c: 'Muda',
@@ -3484,7 +3484,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do axolote?',
-      options: {
+      answers: {
         a: 'Capacidade de regenerar membros',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -3495,7 +3495,7 @@ export const tech = {
     },
     {
       question: 'Qual destes animais tem o maior cérebro em relação ao tamanho do corpo?',
-      options: {
+      answers: {
         a: 'Delfim',
         b: 'Elefante',
         c: 'Orca',
@@ -3506,7 +3506,7 @@ export const tech = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de navegar usando a Terra magnética?',
-      options: {
+      answers: {
         a: 'Pombo',
         b: 'Tartaruga marinha',
         c: 'Robalo',
@@ -3517,7 +3517,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica mais distinta dos moluscos cefalópodes?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Voo',
         c: 'Regeneração de membros',
@@ -3528,7 +3528,7 @@ export const tech = {
     },
     {
       question: 'Qual é o maior réptil marinho conhecido?',
-      options: {
+      answers: {
         a: 'Crocodilo-de-água-salgada',
         b: 'Iguana marinha',
         c: 'Dragão de Komodo',
@@ -3540,7 +3540,7 @@ export const tech = {
     {
       question:
         'Qual é o animal conhecido por sua capacidade de criar um campo elétrico para navegação e caça?',
-      options: {
+      answers: {
         a: 'Raia',
         b: 'Tubarão',
         c: 'Enguia elétrica',
@@ -3551,7 +3551,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do peixe-lua?',
-      options: {
+      answers: {
         a: 'É o peixe mais pesado do mundo',
         b: 'Pode voar',
         c: 'É venenoso',
@@ -3563,7 +3563,7 @@ export const tech = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de criar sons de alta frequência para localizar presas?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Morcego',
         c: 'Cachalote',
@@ -3574,7 +3574,7 @@ export const tech = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de hibernar por longos períodos?',
-      options: {
+      answers: {
         a: 'Pico',
         b: 'Urso',
         c: 'Esquilo',
@@ -3586,7 +3586,7 @@ export const tech = {
     {
       question:
         'Qual é a principal característica do axolote, que o torna diferente de outros anfíbios?',
-      options: {
+      answers: {
         a: 'Sua capacidade de manter características larvais durante a vida adulta',
         b: 'Sua habilidade de voar',
         c: 'Sua pele altamente venenosa',
@@ -3597,7 +3597,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do fenômeno onde alguns animais podem mudar o sexo durante a vida?',
-      options: {
+      answers: {
         a: 'Sequencial',
         b: 'Simultâneo',
         c: 'Regeneração',
@@ -3608,7 +3608,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica dos animais bioluminescentes?',
-      options: {
+      answers: {
         a: 'Capacidade de produzir luz própria',
         b: 'Capacidade de mudar de cor',
         c: 'Habilidade de voar',
@@ -3619,7 +3619,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior cefalópode conhecido?',
-      options: {
+      answers: {
         a: 'Lula-gigante',
         b: 'Polvo',
         c: 'Lula-colossal',
@@ -3631,7 +3631,7 @@ export const tech = {
     {
       question:
         'Qual é a principal característica do dragão de Komodo que o torna um predador eficiente?',
-      options: {
+      answers: {
         a: 'Sua saliva venenosa',
         b: 'Sua habilidade de voar',
         c: 'Sua visão aguçada',
@@ -3643,7 +3643,7 @@ export const tech = {
     {
       question:
         'Qual é a principal característica do peixe-lua, conhecido por seu tamanho impressionante?',
-      options: {
+      answers: {
         a: 'Seu peso pode exceder 2.500 kg',
         b: 'Pode mudar de cor',
         c: 'É altamente venenoso',
@@ -3655,7 +3655,7 @@ export const tech = {
     {
       question:
         'Qual é a principal característica do tubarão-baleia que o distingue dos outros tubarões?',
-      options: {
+      answers: {
         a: 'Seu tamanho gigantesco',
         b: 'Sua habilidade de mudar de cor',
         c: 'Sua bioluminescência',
@@ -3667,7 +3667,7 @@ export const tech = {
     {
       question:
         'Qual é a principal característica do peixe-lua que o torna um dos maiores peixes do mundo?',
-      options: {
+      answers: {
         a: 'Sua enorme massa corporal',
         b: 'Sua capacidade de mudar de cor',
         c: 'Sua habilidade de voar',
@@ -3679,7 +3679,7 @@ export const tech = {
     {
       question:
         'Qual é o animal que pode mudar de cor e textura para se camuflar no ambiente marinho?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Tartaruga',
         c: 'Peixe-lua',
@@ -3690,7 +3690,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do peixe-lua que o distingue de outros peixes?',
-      options: {
+      answers: {
         a: 'Sua enorme circunferência',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -3702,7 +3702,7 @@ export const tech = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de realizar um voo de alta velocidade?',
-      options: {
+      answers: {
         a: 'Falcão-peregrino',
         b: 'Águia',
         c: 'Beija-flor',
@@ -3713,7 +3713,7 @@ export const tech = {
     },
     {
       question: 'Qual é o principal alimento do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'Plâncton',
         b: 'Peixes grandes',
         c: 'Caranguejos',
@@ -3724,7 +3724,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica única dos moluscos cefalópodes, como a lula e o polvo?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Habilidade de voar',
         c: 'Habilidade de regenerar membros',
@@ -3736,7 +3736,7 @@ export const tech = {
     {
       question:
         'Qual é a característica mais distintiva do polvo em comparação com outros cefalópodes?',
-      options: {
+      answers: {
         a: 'Sua capacidade de mudar de cor e textura',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -3747,7 +3747,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica do cavalo-marinho que o distingue de outros peixes?',
-      options: {
+      answers: {
         a: 'O macho carrega os ovos',
         b: 'Tem uma cauda preênsil',
         c: 'Pode voar',
@@ -3759,7 +3759,7 @@ export const tech = {
     {
       question:
         'Qual é o animal que tem a capacidade de realizar uma metamorfose completa durante sua vida?',
-      options: {
+      answers: {
         a: 'Borboleta',
         b: 'Sapo',
         c: 'Lagarto',
@@ -3771,7 +3771,7 @@ export const tech = {
     {
       question:
         'Qual é o nome da técnica usada por alguns animais para se camuflar em ambientes marinhos?',
-      options: {
+      answers: {
         a: 'Camuflagem',
         b: 'Metamorfose',
         c: 'Disfarce',
@@ -3782,7 +3782,7 @@ export const tech = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'dragão barbudo'?",
-      options: {
+      answers: {
         a: 'Possui uma pele escamosa com uma barbicha',
         b: 'É venenoso',
         c: 'Pode voar',
@@ -3793,7 +3793,7 @@ export const tech = {
     },
     {
       question: 'Qual é o maior animal terrestre conhecido?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Girafa',
         c: 'Rinoceronte',
@@ -3804,7 +3804,7 @@ export const tech = {
     },
     {
       question: 'Qual é o animal conhecido por sua habilidade de voar a velocidades supersônicas?',
-      options: {
+      answers: {
         a: 'Falcão-peregrino',
         b: 'Águia',
         c: 'Pato',
@@ -3815,7 +3815,7 @@ export const tech = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'ornitorrinco'?",
-      options: {
+      answers: {
         a: 'Possui esporões venenosos',
         b: 'Pode voar',
         c: 'É bioluminescente',
@@ -3827,7 +3827,7 @@ export const tech = {
     {
       question:
         'Qual é o animal que pode mudar de cor e textura para se esconder de predadores e presas?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Robalo',
         c: 'Tartaruga',
@@ -3838,7 +3838,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica mais distintiva do peixe-lua?',
-      options: {
+      answers: {
         a: 'Seu tamanho gigante',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -3849,7 +3849,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior animal marinho conhecido?',
-      options: {
+      answers: {
         a: 'Baleia-azul',
         b: 'Tubarão-baleia',
         c: 'Orca',
@@ -3860,7 +3860,7 @@ export const tech = {
     },
     {
       question: 'Qual é a principal característica do camaleão?',
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor',
         b: 'Possui asas',
         c: 'É venenoso',
@@ -3871,7 +3871,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior predador marinho?',
-      options: {
+      answers: {
         a: 'Orca',
         b: 'Tubarão-branco',
         c: 'Cachalote',
@@ -3883,7 +3883,7 @@ export const tech = {
     {
       question:
         'Qual é o nome do animal que possui um sistema de comunicação altamente complexo e vocalizações distintas?',
-      options: {
+      answers: {
         a: 'Golfinho',
         b: 'Elefante',
         c: 'Macaco',
@@ -3894,7 +3894,7 @@ export const tech = {
     },
     {
       question: 'Qual é o principal habitat do peixe-lua?',
-      options: {
+      answers: {
         a: 'Oceano profundo',
         b: 'Águas rasas',
         c: 'Rios',
@@ -3905,7 +3905,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica mais distintiva do tubarão-baleia?',
-      options: {
+      answers: {
         a: 'Seu tamanho enorme',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -3916,7 +3916,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior animal terrestre?',
-      options: {
+      answers: {
         a: 'Elefante africano',
         b: 'Girafa',
         c: 'Rinoceronte',
@@ -3927,7 +3927,7 @@ export const tech = {
     },
     {
       question: "Qual é a principal característica dos animais conhecidos como 'cefalópodes'?",
-      options: {
+      answers: {
         a: 'Capacidade de mudar de cor e textura',
         b: 'Habilidade de voar',
         c: 'Capacidade de criar teias',
@@ -3938,7 +3938,7 @@ export const tech = {
     },
     {
       question: 'Qual é o nome do maior réptil marinho?',
-      options: {
+      answers: {
         a: 'Tartaruga-de-couro',
         b: 'Crocodilo-de-água-salgada',
         c: 'Dragão de Komodo',
@@ -3950,7 +3950,7 @@ export const tech = {
     {
       question:
         'Qual é a característica mais distintiva do delfim em comparação com outros cetáceos?',
-      options: {
+      answers: {
         a: 'Sua inteligência e habilidades sociais',
         b: 'Sua capacidade de voar',
         c: 'Sua habilidade de mudar de cor',
@@ -3962,7 +3962,7 @@ export const tech = {
     {
       question:
         'Qual é o animal conhecido por sua habilidade de criar padrões complexos na pele como forma de comunicação?',
-      options: {
+      answers: {
         a: 'Polvo',
         b: 'Tartaruga',
         c: 'Peixe-lua',
@@ -3973,7 +3973,7 @@ export const tech = {
     },
     {
       question: "Qual é a principal característica do animal conhecido como 'dragão barbudo'?",
-      options: {
+      answers: {
         a: 'Sua pele escamosa com uma barbicha',
         b: 'Sua habilidade de voar',
         c: 'Sua bioluminescência',
@@ -3985,7 +3985,7 @@ export const tech = {
     {
       question:
         'Qual é o animal que pode realizar uma metamorfose completa e mudar de forma completamente durante sua vida?',
-      options: {
+      answers: {
         a: 'Borboleta',
         b: 'Sapo',
         c: 'Lagarto',
@@ -3996,7 +3996,7 @@ export const tech = {
     },
     {
       question: 'Qual é a característica mais distintiva do cavalo-marinho?',
-      options: {
+      answers: {
         a: 'O macho carrega os ovos',
         b: 'Possui asas',
         c: 'É venenoso',
@@ -4008,7 +4008,7 @@ export const tech = {
     {
       question:
         'Qual é o nome do animal que possui uma estrutura corporal adaptada para a vida aquática e é conhecido por sua habilidade de voar?',
-      options: {
+      answers: {
         a: 'Morcego',
         b: 'Pinguim',
         c: 'Pato',

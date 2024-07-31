@@ -3,10 +3,15 @@
 import { ref } from "vue";
 import { useQuizStore } from "@/stores/quiz";
 import { animals } from "@/infos/questions";
+import { useRouter } from "vue-router";
+import QuizQuestion from "@/components/quiz/TheQuestion.vue";
+import TNavbar from "@/components/shared/TNavbar.vue";
 
 // VARIABLES
+const router = useRouter();
 const store = useQuizStore();
 const questions_infos = ref({ animals });
+const current_question_index = ref(1);
 const quiz_infos = ref(null);
 const quiz_questions = ref(null);
 const questions_quantity = ref({
@@ -16,14 +21,22 @@ const questions_quantity = ref({
   3: 20,
 });
 
-// FUNCTION
+// FUNCTIONS
 const startQuiz = async () => {
+  if (!store.$quizInfo.theme) {
+    router.push("/new-quiz");
+    return;
+  }
+
   // GET QUIZ INFOS AND QUESTIONS
   const { infos, questions } = await getQuizInfo();
   quiz_infos.value = infos;
 
   // MOUNT QUESTIONS
-  quiz_questions.value = await mountQuestions(questions);
+  const filterd_questions = await mountQuestions(questions);
+
+  // MOUNT OBJECT QUESTIONS
+  quiz_questions.value = await mountObjectQuestion(filterd_questions);
 };
 
 const getQuizInfo = () => {
@@ -38,6 +51,16 @@ const mountQuestions = async (questions) => {
   const qtd = questions_quantity.value[store.$quizInfo.difficult.value];
   const rdm = await getRandomElements(questions, qtd);
   return rdm;
+};
+
+const mountObjectQuestion = (arr) => {
+  let obj = {};
+  arr.forEach((element, idx) => {
+    element.reponse = "";
+    obj[idx + 1] = element;
+  });
+
+  return obj;
 };
 
 const getRandomElements = (arr, qtd) => {
@@ -62,31 +85,20 @@ startQuiz();
 
 <template>
   <main class="quiz min-h-[100dvh] w-full p-4 flex flex-col gap-10">
-    <div
-      class="newQuiz__header w-full h-[70px] rounded-xl flex items-center justify-between z-30 bg-bb-green-100 p-5"
-    >
-      <div class="left">
-        <span
-          class="font-extrabold text-2xl text-bb-white-100 cursor-pointer"
-          @click="router.push('/')"
-        >
-          BrainBlitz.
-        </span>
-      </div>
-
-      <div
-        class="right w-[40px] h-[40px] bg-bb-green-200 p-2 flex items-center justify-center rounded-full"
-      >
-        <span class="font-extrabold text-1xl text-bb-white-100">AF</span>
-      </div>
-    </div>
-
-    <div class="quiz__content px-4 border-2 border-black">
-      <template v-if="quiz_questions?.length">
-        <div v-for="(q, i) in quiz_questions" :key="i" class="relative z-30">
-          <span>{{ q.question }}</span>
+    <TNavbar>
+      <template #right>
+        <div class="level">
+          <small class="text-bb-white-100">
+            Level: <strong>{{ store.$quizInfo.difficult.name }}</strong>
+          </small>
         </div>
       </template>
+    </TNavbar>
+
+    <div class="quiz__content px-4">
+      <div class="question py-2">
+        <QuizQuestion :current-question-prop="quiz_questions[current_question_index]" />
+      </div>
     </div>
 
     <div class="dot dot-1">
