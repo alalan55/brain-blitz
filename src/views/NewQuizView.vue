@@ -38,12 +38,14 @@ const themes = ref([
     link: "/new-quiz",
     img_path: "/img/animals.png",
     value: 0,
+    value_name: "animals",
   },
   {
     name: "Tecnologia",
     link: "/works",
     img_path: "/img/tech-2.png",
     value: 1,
+    value_name: "tech",
   },
 
   {
@@ -260,62 +262,6 @@ const setDifficult = (level) => {
       @media (max-width: 650px) {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       }
-    }
-  }
-
-  .dot {
-    border-radius: 50%;
-    background: #cde4df;
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    z-index: 1;
-    transition: 0.5s ease-in-out;
-    .dot-outsite {
-      position: relative;
-      height: 100%;
-      width: 100%;
-
-      &::after {
-        position: absolute;
-        content: "";
-        inset: -35%;
-        border: 2px solid #cde4df;
-        border-radius: 50%;
-      }
-    }
-  }
-
-  .dot-1 {
-    top: -40%;
-    right: -10%;
-  }
-
-  .dot-2 {
-    bottom: -30%;
-    left: -20%;
-  }
-
-  @media (max-width: 750px) {
-    .dot {
-      width: 200px;
-      height: 200px;
-      background: #dee7e5;
-
-      .dot-outsite {
-        &::after {
-          border: 2px solid #dee7e5;
-        }
-      }
-    }
-    .dot-1 {
-      top: 10%;
-      right: -20%;
-    }
-
-    .dot-2 {
-      bottom: 8%;
-      left: -15%;
     }
   }
 }

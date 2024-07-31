@@ -6,7 +6,6 @@ export const useQuizStore = defineStore('quiz', {
   }),
   actions: {
     SET_THEME(payload) {
-      console.log(payload, this.quizInfo)
       this.quizInfo.theme = payload
     },
     SET_DIFFICULT(payload) {
