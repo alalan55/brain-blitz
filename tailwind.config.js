@@ -43,6 +43,7 @@ export default {
         'bb-green-100': '#0A4A49',
         'bb-green-200': '#628C8A',
         'bb-green-300': '#ACD1C7',
+        'bb-green-400': '#0d5e5d',
         'bb-white-100': '#EFF0F3',
 
         'rdo-blue-100': '#4381A7',
