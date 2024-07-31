@@ -1,6 +1,6 @@
 <script setup>
 //IMPORTS
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useQuizStore } from "@/stores/quiz";
 import { animals } from "@/infos/questions";
 import { useRouter } from "vue-router";
@@ -57,6 +57,7 @@ const mountObjectQuestion = (arr) => {
   let obj = {};
   arr.forEach((element, idx) => {
     element.reponse = "";
+    element.responseAnswer = "";
     obj[idx + 1] = element;
   });
 
@@ -80,6 +81,16 @@ const getRandomElements = (arr, qtd) => {
   return shuffled.slice(min);
 };
 
+const setResponse = (response) => {
+  quiz_questions.value[current_question_index] = response;
+  current_question_index.value++;
+  console.log(current_question_index.value);
+};
+
+const questionsQuanity = computed(
+  () => questions_quantity.value[store.$quizInfo.difficult.value]
+);
+
 startQuiz();
 </script>
 
@@ -95,9 +106,15 @@ startQuiz();
       </template>
     </TNavbar>
 
-    <div class="quiz__content px-4">
+    <div v-if="quiz_questions" class="quiz__content px-4">
       <div class="question py-2">
-        <QuizQuestion :current-question-prop="quiz_questions[current_question_index]" />
+        <QuizQuestion
+          :current-question-prop="quiz_questions[current_question_index]"
+          :current-question-idnex="current_question_index"
+          :questions-quantity-prop="questionsQuanity"
+          :key="current_question_index"
+          @select-response="setResponse"
+        />
       </div>
     </div>
 
