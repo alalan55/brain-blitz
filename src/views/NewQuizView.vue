@@ -1,14 +1,17 @@
 <script setup>
 // IMPORTS
-import { useQuizStore } from "@/stores/quiz";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
+
+import { useQuizStore } from "@/stores/quiz";
 
 // VARIABLES
 const store = useQuizStore();
 const router = useRouter();
 const chosedTheme = ref(null);
 const choosedLevel = ref(null);
+const show_modal = ref(false);
+const user_name = ref("");
 const currentView = ref(1);
 const levels = ref([
   {
@@ -123,6 +126,27 @@ const setDifficult = (level) => {
   store.SET_DIFFICULT(level);
   choosedLevel.value = level;
 };
+
+const verifyUser = () => {
+  if (store.$userInfo) router.push("/quiz");
+  else show_modal.value = true;
+};
+
+const saveUser = () => {
+  store.SET_USER_INFO(user_name.value);
+  show_modal.value = false;
+  router.push("/quiz");
+};
+
+// COMPUTEDS
+const userIcon = computed(() => {
+  let name = "";
+
+  if (store.$userInfo && store.$userInfo.name)
+    name = store.$userInfo.name.split("")[0] + store.$userInfo.name.split("")[1];
+
+  return name;
+});
 </script>
 
 <template>
@@ -142,7 +166,7 @@ const setDifficult = (level) => {
       <div
         class="right w-[40px] h-[40px] bg-bb-green-200 p-2 flex items-center justify-center rounded-full"
       >
-        <span class="font-extrabold text-1xl text-bb-white-100">AF</span>
+        <span class="font-extrabold text-1xl text-bb-white-100">{{ userIcon }}</span>
       </div>
     </div>
 
@@ -229,12 +253,48 @@ const setDifficult = (level) => {
         <button
           class="bg-bb-green-100 px-6 py-3 rounded-xl"
           :disabled="!choosedLevel"
-          @click="router.push('/quiz')"
+          @click="verifyUser"
         >
           <span class="text-white font-semibold">Começar Quiz 🎉</span>
         </button>
       </div>
     </template>
+
+    <div
+      v-if="show_modal"
+      class="flex items-center justify-center z-40 h-dvh w-dvw fixed inset-0 border-2"
+    >
+      <!-- Overlay -->
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"
+        @click.self="show_modal = !show_modal"
+      ></div>
+
+      <!-- Card -->
+      <div class="relative max-w-[90%] p-6 bg-white rounded-lg shadow-lg z-10">
+        <h1 class="text-2xl font-bold mb-4 text-bb-green-100">
+          Insira seu nome ou apelido para começar o quiz ✍:
+        </h1>
+        <div class="w-full mt-10">
+          <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+            >Nome</label
+          >
+          <input
+            v-model="user_name"
+            id="name"
+            type="text"
+            placeholder="Ex: Fulano da Silva Sauro"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
+          />
+
+          <div class="action flex items-center justify-center pt-8">
+            <button class="bg-bb-green-100 px-5 py-2 rounded-xl" @click="saveUser">
+              <span class="text-white font-semibold">Começar 🎊</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="dot dot-1">
       <div class="dot-outsite"></div>

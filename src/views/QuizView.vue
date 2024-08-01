@@ -1,9 +1,9 @@
 <script setup>
 //IMPORTS
 import { ref, computed } from "vue";
+import { useRouter } from "vue-router";
 import { useQuizStore } from "@/stores/quiz";
 import { animals } from "@/infos/questions";
-import { useRouter } from "vue-router";
 import QuizQuestion from "@/components/quiz/TheQuestion.vue";
 import TNavbar from "@/components/shared/TNavbar.vue";
 import TheStatistics from "@/components/quiz/TheStatistics.vue";
@@ -29,7 +29,7 @@ const questions_quantity = ref({
 const results_messages = ref({
   bad: "É, sempre há tempo para melhorar 😉",
   good: "Você está no caminho certo 😄",
-  excellent: "Mandou muito bem! Continue assim",
+  excellent: "Mandou muito bem! Continue assim! 👏",
   wow: "WOOOW 😮😮😱🎉🎇",
 });
 
@@ -51,18 +51,29 @@ const startQuiz = async () => {
   quiz_questions.value = await mountObjectQuestion(filterd_questions);
 };
 
-const getQuizInfo = () => {
-  const info = questions_infos.value[store.$quizInfo?.theme?.value_name];
-  const questions =
-    info.questions.filter((q) => q.level == store.$quizInfo.difficult.value) || [];
-
-  return { infos: info, questions: questions };
-};
-
 const mountQuestions = async (questions) => {
   const qtd = questions_quantity.value[store.$quizInfo.difficult.value];
   const rdm = await getRandomElements(questions, qtd);
   return rdm;
+};
+
+const setResponse = async (response) => {
+  // update quiz with new responses
+  delete quiz_questions.value[current_question_index.value];
+  quiz_questions.value[current_question_index.value] = response;
+
+  // go to next question if not last
+  if (current_question_index.value != questionsQuanity.value) {
+    current_question_index.value++;
+    return;
+  }
+
+  // save informations to quiz
+  finalResult.value = await calculatePoints(quiz_questions.value);
+  hint_percent.value = await calculatePercentHint(finalResult.value).toFixed(0);
+  await setFinishMessage(hint_percent.value);
+  saveQuiz();
+  finished.value = true;
 };
 
 const mountObjectQuestion = (arr) => {
@@ -93,19 +104,12 @@ const getRandomElements = (arr, qtd) => {
   return shuffled.slice(min);
 };
 
-const setResponse = async (response) => {
-  delete quiz_questions.value[current_question_index.value];
+const getQuizInfo = () => {
+  const infos = questions_infos.value[store.$quizInfo?.theme?.value_name];
+  const questions =
+    infos.questions.filter((q) => q.level == store.$quizInfo.difficult.value) || [];
 
-  quiz_questions.value[current_question_index.value] = response;
-
-  if (current_question_index.value == questionsQuanity.value) {
-    finalResult.value = await calculatePoints(quiz_questions.value);
-    hint_percent.value = await calculatePercentHint(finalResult.value).toFixed(0);
-    await setFinishMessage(hint_percent.value);
-    finished.value = true;
-  } else {
-    current_question_index.value++;
-  }
+  return { infos, questions: questions };
 };
 
 const calculatePoints = (form) => {
@@ -135,10 +139,31 @@ const setFinishMessage = (value) => {
   if (value > 10 && value < 40) result_status_message.value = "good";
   if (value > 40 && value < 80) result_status_message.value = "excellent";
   if (value > 80) result_status_message.value = "wow";
-
-  console.log(result_status_message.value, "here");
-
   return;
+};
+
+const saveQuiz = () => {
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0!
+  let dd = today.getDate();
+  let hh = today.getHours();
+  let min = today.getMinutes();
+
+  if (dd < 10) dd = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+
+  const formattedToday = `${dd}/${mm}/${yyyy} ${hh}:${min}`;
+
+  const obj = {
+    date: formattedToday,
+    hints: Object.keys(finalResult.value["hints"]).length,
+    errors: Object.keys(finalResult.value["errors"]).length,
+    hint_percent: hint_percent.value,
+    theme: quiz_infos.value.name,
+  };
+
+  store.SET_USER_QUIZ(obj);
 };
 
 // COMPUTEDS
@@ -218,7 +243,10 @@ startQuiz();
       <div
         class="result-action flex flex-wrap items-center justify-center gap-5 w-[90%] md:w-[45%]"
       >
-        <button class="bg-bb-green-100 px-6 py-3 rounded-xl flex-1">
+        <button
+          class="bg-bb-green-100 px-6 py-3 rounded-xl flex-1"
+          @click="router.push('/new-quiz')"
+        >
           <span class="text-xs md:text-base text-white font-semibold">Home 🏠</span>
         </button>
 

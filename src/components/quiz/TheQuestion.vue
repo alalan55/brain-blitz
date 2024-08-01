@@ -63,7 +63,6 @@ const setResponse = (resp) => {
         <span class="text-white font-semibold">Responder</span>
       </button>
     </div>
-    <!-- <pre>    {{ the_qusetion }}</pre> -->
   </div>
 </template>
 
