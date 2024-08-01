@@ -1,4 +1,5 @@
 <script setup>
+// IMPORTS
 import { ref } from "vue";
 
 // PROPS
@@ -15,7 +16,6 @@ const emit = defineEmits(["selectResponse"]);
 const the_qusetion = ref({ ...props.currentQuestionProp });
 
 // FUNCTIONS
-
 const setResponse = (resp) => {
   // usar essa função no futuro caso seja necessário
   for (const [key, value] of Object.entries(the_qusetion.value.answers)) {
@@ -28,13 +28,15 @@ const setResponse = (resp) => {
 </script>
 
 <template>
-  <div class="question flex flex-col gap-10">
+  <div class="question flex flex-col gap-8">
     <div class="question__title flex flex-col gap-1">
-      <small class="text-bb-green-100"
-        >pergunta <strong>{{ props.currentQuestionIdnex }}</strong> de
-        <strong>{{ props.questionsQuantityProp }}</strong></small
-      >
-      <span class="text-2xl text-bb-green-100">{{ the_qusetion.question }}</span>
+      <small class="text-bb-green-100">
+        pergunta <strong>{{ props.currentQuestionIdnex }}</strong> de
+        <strong>{{ props.questionsQuantityProp }}</strong>
+      </small>
+      <span class="text-lg md:text-2xl text-bb-green-100">
+        {{ the_qusetion.question }}
+      </span>
     </div>
 
     <div class="question__options flex flex-col gap-8">
@@ -61,7 +63,7 @@ const setResponse = (resp) => {
         <span class="text-white font-semibold">Responder</span>
       </button>
     </div>
-    <pre>    {{ the_qusetion }}</pre>
+    <!-- <pre>    {{ the_qusetion }}</pre> -->
   </div>
 </template>
 

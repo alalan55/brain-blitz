@@ -6,6 +6,7 @@ import { animals } from "@/infos/questions";
 import { useRouter } from "vue-router";
 import QuizQuestion from "@/components/quiz/TheQuestion.vue";
 import TNavbar from "@/components/shared/TNavbar.vue";
+import TheStatistics from "@/components/quiz/TheStatistics.vue";
 
 // VARIABLES
 const router = useRouter();
@@ -16,9 +17,15 @@ const quiz_infos = ref(null);
 const quiz_questions = ref(null);
 const questions_quantity = ref({
   0: 10,
-  1: 15,
+  1: 12,
   2: 15,
   3: 20,
+});
+const results_messages = ref({
+  bad: "É, sempre há tempo para melhorar 😉",
+  good: "Você está no caminho certo 😄",
+  excellent: "Mandou muito bem! Continue assim",
+  wow: "WOOOW 😮😮😱🎉🎇",
 });
 
 // FUNCTIONS
@@ -56,7 +63,7 @@ const mountQuestions = async (questions) => {
 const mountObjectQuestion = (arr) => {
   let obj = {};
   arr.forEach((element, idx) => {
-    element.reponse = "";
+    element.response = "";
     element.responseAnswer = "";
     obj[idx + 1] = element;
   });
@@ -82,9 +89,15 @@ const getRandomElements = (arr, qtd) => {
 };
 
 const setResponse = (response) => {
-  quiz_questions.value[current_question_index] = response;
-  current_question_index.value++;
-  console.log(current_question_index.value);
+  quiz_questions.value[current_question_index.value];
+
+  quiz_questions.value[current_question_index.value] = response;
+
+  if (current_question_index.value == questionsQuanity.value) {
+    console.log("RESPONDIDO", quiz_questions.value);
+  } else {
+    current_question_index.value++;
+  }
 };
 
 const questionsQuanity = computed(
@@ -95,8 +108,8 @@ startQuiz();
 </script>
 
 <template>
-  <main class="quiz min-h-[100dvh] w-full p-4 flex flex-col gap-10">
-    <TNavbar>
+  <main class="quiz min-h-[100dvh] w-full p-4 flex flex-col gap-10 relative">
+    <!-- <TNavbar>
       <template #right>
         <div class="level">
           <small class="text-bb-white-100">
@@ -116,20 +129,44 @@ startQuiz();
           @select-response="setResponse"
         />
       </div>
-    </div>
+    </div> -->
 
-    <div class="dot dot-1">
-      <div class="dot-outsite"></div>
-    </div>
+    <div class="quiz__result flex-1 flex flex-col items-center justify-center gap-6">
+      <div class="result-message text-center">
+        <span class="text-2xl md:text-4xl font-semibold text-bb-green-100">
+          {{ results_messages["good"] }}
+        </span>
+      </div>
 
-    <div class="dot dot-2">
-      <div class="dot-outsite"></div>
+      <div
+        class="result-percentage w-[25dvh] h-[25dvh] md:w-[30dvh] md:h-[30dvh] border-solid border-[20px] border-bb-green-100 rounded-full flex items-center justify-center flex flex-col"
+      >
+        <span class="text-2xl font-bold text-bb-green-100">100%</span>
+        <small>de acertos</small>
+      </div>
+
+      <div class="results-quantity flex gap-12">
+        <span class="text-bb-green-100"> <strong>10</strong> acertos </span>
+
+        <span class="text-bb-red-300"> <strong>3</strong> erros </span>
+      </div>
+
+      <div class="result-statitics gap-5 w-[90%] md:w-[55%] flex flex-col gap-5">
+        <TheStatistics />
+      </div>
+
+      <div
+        class="result-action flex flex-wrap items-center justify-center gap-5 w-[90%] md:w-[45%]"
+      >
+        <button class="bg-bb-green-100 px-6 py-3 rounded-xl flex-1">
+          <span class="text-white font-semibold">Home 🏠</span>
+        </button>
+        <button class="bg-bb-green-100 px-6 py-3 rounded-xl flex-1">
+          <span class="text-white font-semibold">Novo quiz 🎉</span>
+        </button>
+      </div>
     </div>
   </main>
 </template>
 
-<style lang="postcss" scoped>
-.quiz {
-  position: relative;
-}
-</style>
+<style lang="postcss" scoped></style>
