@@ -1,10 +1,22 @@
 <script setup>
 // IMPORTS
 import { ref } from "vue";
-const show = ref(true);
+
+// PROPS
+const props = defineProps({
+  resultProp: { type: Object, default: null, required: true },
+});
+
+// VARIABLES
+const show = ref(false);
+const full_result = ref(props.resultProp.full);
 </script>
 <template>
-  <div v-auto-animate class="p-5 w-full bg-white shadow-md rounded-xl">
+  <div
+    v-if="props.resultProp"
+    v-auto-animate
+    class="p-5 w-full bg-white shadow-md rounded-xl"
+  >
     <div class="header flex items-center justify-between">
       <span class="text-xl font-semibold text-bb-green-100">Visão Geral</span>
 
@@ -18,12 +30,15 @@ const show = ref(true);
     </div>
 
     <div v-if="show" class="body flex flex-col gap-7 mt-5">
-      <div v-for="t in 10" :key="t">
+      <div v-for="(t, idx) in full_result" :key="t.question">
         <span
           class="font-semibold"
-          :class="{ 'text-bb-green-100': t % 2 == 0, 'text-bb-red-300': t % 2 != 0 }"
+          :class="{
+            'text-bb-green-100': t.correct_answer == t.response,
+            'text-bb-red-300': t.correct_answer != t.response,
+          }"
         >
-          {{ t }} - Quem foi que descobriu o brasil?
+          {{ idx }} - {{ t.question }}
         </span>
 
         <div class="mt-1">
@@ -35,10 +50,13 @@ const show = ref(true);
                 alt="Certas"
               />
             </figure>
-            <span>Foi o mano Pedro Alvares Cabral</span>
+            <span>
+              <strong>({{ t.correct_answer }})</strong> -
+              {{ t.answers[t.correct_answer] }}
+            </span>
           </div>
 
-          <div class="flex items-center gap-1">
+          <div v-if="t.correct_answer != t.response" class="flex items-center gap-1">
             <figure class="h-[25px] w-[25px]">
               <img
                 class="w-full h-full object contain"
@@ -46,7 +64,10 @@ const show = ref(true);
                 alt="Certas"
               />
             </figure>
-            <span>Foi o mano Jimi Marsharl Hendrix</span>
+            <span>
+              <strong>({{ t.response }})</strong> -
+              {{ t.responseAnswer }}
+            </span>
           </div>
         </div>
       </div>
