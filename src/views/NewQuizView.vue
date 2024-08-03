@@ -151,6 +151,8 @@ const userIcon = computed(() => {
 
 <template>
   <main v-auto-animate class="newQuiz min-h-[100dvh] w-full p-4 flex flex-col gap-10">
+    <RemoteComponent />
+
     <div
       class="newQuiz__header w-full h-[70px] rounded-xl flex items-center justify-between z-30 bg-bb-green-100 p-5"
     >

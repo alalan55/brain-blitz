@@ -1,7 +1,14 @@
 <script setup>
 // IMPORTS
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { RouterLink } from "vue-router";
+import ReactWrapper from "@/components/ReactWrapper";
+
+const remoteComponent = ref(null);
+
+onMounted(async () => {
+  remoteComponent.value = (await import("remote/Button")).default;
+});
 
 const links = ref([
   {
@@ -31,6 +38,8 @@ const links = ref([
   <main
     class="home min-h-[100dvh] w-full p-4 flex flex-col items-center justify-center gap-10"
   >
+    <ReactWrapper v-if="remoteComponent" :component="remoteComponent" />
+
     <div class="home__logo relative z-30">
       <span class="font-extrabold text-5xl text-bb-green-100"> BrainBlitz. </span>
     </div>
